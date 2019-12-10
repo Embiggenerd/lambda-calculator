@@ -11,7 +11,7 @@ const Numbers = () => {
   const [nums] = useState(numbers)
   return (
     <div>
-      {nums.map(num => <NumberButton num={num} />)}
+      {nums.map(num => <NumberButton key={num} num={num} />)}
     </div>
   );
 };
