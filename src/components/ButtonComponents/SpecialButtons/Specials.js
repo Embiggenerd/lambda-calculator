@@ -10,7 +10,7 @@ const Specials = ({ display, setDisplay }) => {
   const [sps] = useState(specials)
 
   return (
-    <div className="container-special">
+    <div className="container-specials">
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
