@@ -1,8 +1,9 @@
 import React from "react";
 
 const OperatorButton = ({op}) => {
+  console.log('operator',op)
   return (
-    <button className="op-button">{op.char}</button>
+    <button className="button-operator">{op.char}</button>
   );
 };
 

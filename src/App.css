@@ -34,3 +34,12 @@
   .button-special {
     background: #305edb;
   }
+
+  .button-operator {
+    background: #5777d1;
+
+  }
+
+  .button-number {
+      background: #0e43d4;
+  }
