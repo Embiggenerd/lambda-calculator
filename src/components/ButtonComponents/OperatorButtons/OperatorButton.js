@@ -1,9 +1,8 @@
 import React from "react";
 
-const OperatorButton = ({op}) => {
-  console.log('operator',op)
+const OperatorButton = ({ op, display, setDisplay }) => {
   return (
-    <button className="button-operator">{op.char}</button>
+    <button onClick={() => setDisplay(display + op.value)} className="button-operator">{op.char}</button>
   );
 };
 

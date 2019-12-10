@@ -6,12 +6,12 @@ import React, { useState } from "react";
 import { numbers } from '../../../data'
 //Import your array data to from the provided data file
 import NumberButton from "./NumberButton"
-const Numbers = () => {
+const Numbers = ({ display, setDisplay }) => {
   // STEP 2 - add the imported data to state
   const [nums] = useState(numbers)
   return (
     <div>
-      {nums.map(num => <NumberButton key={num} num={num} />)}
+      {nums.map(num => <NumberButton display={display} setDisplay={setDisplay} key={num} num={num} />)}
     </div>
   );
 };

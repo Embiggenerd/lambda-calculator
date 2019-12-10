@@ -1,8 +1,8 @@
 import React from "react";
 
-const NumberButton = ({ num }) => {
+const NumberButton = ({ num, display, setDisplay }) => {
   return (
-    <button className="button-number">{num}</button>
+    <button onClick={()=>setDisplay(display+num)} className="button-number">{num}</button>
   );
 };
 
